@@ -4,7 +4,9 @@
   "description": "full ecommerce site using MERN",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node backend/server.js",
+    "dev": "SET NODE_ENV=DEVELOPMENT& nodemon backend/server",
+    "prod": "SET NODE_ENV=PRODUCTION& nodemon backend/server"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,8 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "mongoose": "^5.13.7"
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12",
+    "save-dev": "0.0.1-security"
   }
 }
